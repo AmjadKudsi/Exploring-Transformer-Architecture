@@ -1,0 +1,8 @@
+Testing Position-wise Feed-Forward Network...
+Input shape: torch.Size([2, 8, 64])
+FFN ReLU output shape: torch.Size([2, 8, 64])
+FFN GELU output shape: torch.Size([2, 8, 64])
+Testing Transformer Block Pattern...
+Final output shape: torch.Size([2, 8, 64])
+Input stats - mean: 0.0088, std: 1.0050
+Output stats - mean: 0.0000, std: 1.0005

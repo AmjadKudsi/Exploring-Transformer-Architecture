@@ -1,0 +1,17 @@
+Testing Multi-Head Attention Implementation...
+Input shape: torch.Size([2, 8, 64])
+Model config: d_model=64, num_heads=8, d_k=8
+Output shape: torch.Size([2, 8, 64])
+Attention weights shape: torch.Size([2, 8, 8, 8])
+Masked output shape: torch.Size([2, 8, 64])
+Gradient verification:
+  w_q.weight: grad_norm=0.080937
+  w_q.bias: grad_norm=0.023663
+  w_k.weight: grad_norm=0.099653
+  w_k.bias: grad_norm=0.000000
+  w_v.weight: grad_norm=0.201113
+  w_v.bias: grad_norm=0.088934
+  w_o.weight: grad_norm=0.257533
+  w_o.bias: grad_norm=0.125000
+
+Total parameters: 16,640

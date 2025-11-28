@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Plot preview</title>
+  <style>
+    body{
+      margin:0;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:#1f1f1f;
+      font-family:sans-serif;
+      color:#fff;
+    }
+    img{max-width:90%;border-radius:.5rem}
+    .placeholder{font-size:1.1rem;letter-spacing:.5px;text-align:center}
+  </style>
+</head>
+<body>
+
+  <!-- the image starts hidden; JS will flip visibility -->
+  <img id="plot" src="plot.png" alt="Generated plot" style="display:none">
+
+  <p id="msg" class="placeholder">⏳ Waiting for <code>plot.png</code>…</p>
+
+  <script>
+    // Get img and msg HTML elements
+    const [img, msg] = ['plot', 'msg'].map(id => document.getElementById(id));
+    // Lambda to toggle between showing msg and showing img
+    const toggle = show => (img.style.display = show ? 'block' : 'none', msg.style.display = show ? 'none' : 'block');
+    img.onload = () => toggle(true);    // Show image if loaded
+    img.onerror = () => toggle(false);  // Show msg if image 404s
+    toggle(false);
+  </script>
+
+</body>
+</html>

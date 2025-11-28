@@ -1,0 +1,11 @@
+Testing Transformer Decoder Layer...
+Decoder input shape: torch.Size([2, 6, 64])
+Encoder output shape: torch.Size([2, 8, 64])
+Decoder output shape: torch.Size([2, 6, 64])
+Self-attention weights shape: torch.Size([2, 8, 6, 6])
+Cross-attention weights shape: torch.Size([2, 8, 6, 8])
+Testing Encoder-Decoder Interaction...
+Source tokens shape: torch.Size([2, 10])
+Target tokens shape: torch.Size([2, 8])
+Encoder output shape: torch.Size([2, 10, 64])
+Decoder output shape: torch.Size([2, 8, 64])

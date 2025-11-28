@@ -1,0 +1,7 @@
+Testing ScaledDotProductAttention Module
+Input shapes - Q: torch.Size([2, 5, 16]), K: torch.Size([2, 7, 16]), V: torch.Size([2, 7, 20])
+Output shape (no mask): torch.Size([2, 5, 20])
+Attention weights shape (no mask): torch.Size([2, 5, 7])
+Output shape (masked): torch.Size([2, 5, 20])
+Attention weights shape (masked): torch.Size([2, 5, 7])
+Masked positions attention (should be 0): 0.000000
