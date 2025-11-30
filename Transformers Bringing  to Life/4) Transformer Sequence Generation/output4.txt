@@ -1,0 +1,43 @@
+Testing Transformer Inference...
+Quick training for 2 epochs...
+Step 10, Loss: 2.2555, LR: 0.011000
+Step 20, Loss: 1.8110, LR: 0.021000
+Epoch 1, Loss: 1.7761
+Step 35, Loss: 1.1498, LR: 0.020833
+Step 45, Loss: 1.0691, LR: 0.018430
+Epoch 2, Loss: 0.9768
+
+Inference Results:
+Source: 'hello world'
+Expected: 'world hello'
+Greedy: 'morning good' (time: 0.400s)
+Beam: 'morning good' (time: 0.300s)
+--------------------------------------------------
+Greedy: 'morning good' (time: 0.198s)
+Beam: 'morning good' (time: 0.602s)
+--------------------------------------------------
+Greedy: 'morning good' (time: 0.299s)
+Beam: 'morning good' (time: 0.899s)
+--------------------------------------------------
+Source: 'good morning'
+Expected: 'morning good'
+Greedy: 'morning good' (time: 0.201s)
+Beam: 'morning good' (time: 0.201s)
+--------------------------------------------------
+Greedy: 'morning good' (time: 0.299s)
+Beam: 'morning good' (time: 0.598s)
+--------------------------------------------------
+Greedy: 'morning good' (time: 0.201s)
+Beam: 'morning good' (time: 0.904s)
+--------------------------------------------------
+Source: 'thank you very much'
+Expected: 'much very you thank'
+Greedy: 'much very you thank' (time: 0.300s)
+Beam: 'much very you thank' (time: 0.401s)
+--------------------------------------------------
+Greedy: 'much very you thank' (time: 0.395s)
+Beam: 'much very you thank' (time: 1.200s)
+--------------------------------------------------
+Greedy: 'much very you thank' (time: 0.202s)
+Beam: 'much how' (time: 1.497s)
+--------------------------------------------------
